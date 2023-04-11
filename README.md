@@ -35,8 +35,12 @@ We will first copy the file names and jot it down on a notepad
 
 ![image](https://user-images.githubusercontent.com/112146207/231032762-02446bd7-f2ae-4378-acea-31c8029c4083.png)
 
-Right click the file name and press "generate SAS" 
+Right click the file name and press "generate SAS" and make sure it is the city block IPv4 
 
 ![image](https://user-images.githubusercontent.com/112146207/231033022-3a06ba97-7561-408a-9fb0-cd340e02744d.png)
+
+Change the experation date and click "generate SAS" then copy the Blob SAS URL
+
+![image](https://user-images.githubusercontent.com/112146207/231033594-d39d112c-3a55-4bc2-9a05-e3336d00f910.png)
 
 
