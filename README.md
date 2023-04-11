@@ -91,3 +91,10 @@ For the second watchlist I put this information in
 
 Now we have to allow these files to “upload”/load from our storage account into Sentinel/Log Analytics Workspace. The big one will likely take over 24 hours
 
+---
+We will go to work analytics workspace and query the watchlists we created just to make sure we can see the records from both watchlists 
+
+It should look something like this
+
+![image](https://user-images.githubusercontent.com/112146207/231058252-685c7062-26c7-427d-970d-34c9fe2d851a.png)
+
