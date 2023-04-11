@@ -22,3 +22,21 @@ Once the storage account is created, go to the search bar and type in "storage a
 Within the storage account, create a container named “ipgeodata”
 
 ![image](https://user-images.githubusercontent.com/112146207/231030560-acfa43e5-4d3e-4319-becb-5e9bf0dd42df.png)
+
+Click on "ipgeodata" and we will upload the 2 files we downloaded
+This might take a while since one of the files is very large, but patience is key! 
+
+![image](https://user-images.githubusercontent.com/112146207/231031297-24b3618d-59af-49ae-b564-7397895b5cb9.png)
+
+We now need to create SAS URLs for both of these files.
+A SAS is used to provide access to files on an individual basis instead of opening up the whole container
+
+We will first copy the file names and jot it down on a notepad 
+
+![image](https://user-images.githubusercontent.com/112146207/231032762-02446bd7-f2ae-4378-acea-31c8029c4083.png)
+
+Right click the file name and press "generate SAS" 
+
+![image](https://user-images.githubusercontent.com/112146207/231033022-3a06ba97-7561-408a-9fb0-cd340e02744d.png)
+
+
