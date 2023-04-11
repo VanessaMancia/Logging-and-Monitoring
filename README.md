@@ -51,3 +51,36 @@ It's very important that you copied the Blob URLs to a notepad because we will u
 
 ![image](https://user-images.githubusercontent.com/112146207/231035113-37153ffd-7b20-4039-89e0-32fa03063cd6.png)
 
+---
+
+Our SIEM will look into our work analytics workspace where it will collect, analyze and identify logs in real time. 
+
+Go to portal.azure.com and search "log analytics workspace" then click "create"
+
+Enter in your resource group, name, and region
+hit "create"
+
+![image](https://user-images.githubusercontent.com/112146207/231041157-07ff8690-0e94-4d1a-8855-b0a13f2ae6ca.png)
+
+---
+
+We just created our work analytics workspace which will be injected with Geo data to let us correlate IP addresses and see people's origins. We will then create our SIEMs resource and connect it to the log analytics workspace. 
+
+Go to the search bar and search "Microsoft Sentinel" and hit "create" 
+
+Then click on your workspace and click "add" 
+
+![image](https://user-images.githubusercontent.com/112146207/231042846-4b76998a-cc03-4c4c-9568-174d36763b7b.png)
+
+---
+We will now create 2 Watchlists within Azure Sentinel and ingest geo-data CSV Files from Azure Storage
+
+![image](https://user-images.githubusercontent.com/112146207/231043926-67b9a1bc-b5cf-4b74-81bc-2370a8901560.png)
+
+Now add this information exactly and use YOUR Blob URLs that you copied and saved 
+
+![image](https://user-images.githubusercontent.com/112146207/231044304-b37eee42-396e-4d38-a3b7-24f2d6062360.png)
+
+![image](https://user-images.githubusercontent.com/112146207/231045193-e4b86e10-1d9f-43a7-98da-d447ddcb1955.png)
+
+
