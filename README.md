@@ -39,8 +39,15 @@ Right click the file name and press "generate SAS" and make sure it is the city 
 
 ![image](https://user-images.githubusercontent.com/112146207/231033022-3a06ba97-7561-408a-9fb0-cd340e02744d.png)
 
-Change the experation date and click "generate SAS" then copy the Blob SAS URL
+Change the experation date and click "generate SAS" then copy the Blob SAS URL and put it on your notes because we will use it later
 
 ![image](https://user-images.githubusercontent.com/112146207/231033594-d39d112c-3a55-4bc2-9a05-e3336d00f910.png)
 
+The same steps will be done for the "city-locations" file
+
+![image](https://user-images.githubusercontent.com/112146207/231034805-cc50ffd3-0c0b-4862-959b-ec9c1275a094.png)
+
+It's very important that you copied the Blob URLs to a notepad because we will use them
+
+![image](https://user-images.githubusercontent.com/112146207/231035113-37153ffd-7b20-4039-89e0-32fa03063cd6.png)
 
