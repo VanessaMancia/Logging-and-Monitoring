@@ -98,3 +98,6 @@ It should look something like this
 
 ![image](https://user-images.githubusercontent.com/112146207/231058252-685c7062-26c7-427d-970d-34c9fe2d851a.png)
 
+<details close>
+
+---
