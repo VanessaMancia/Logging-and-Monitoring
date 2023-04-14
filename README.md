@@ -101,3 +101,38 @@ It should look something like this
 <details close>
 
 ---
+
+ We will enable MDC (Microsoft Defender for Cloud) and configure log collection for VMs
+  
+To create another Virtual Machine in Azure, use the same Region, Resource Group, and VNet as the previous VM, and name it "linux-vm". 
+Avoid choosing B1s for the VM size as it may stop creating logs during a DDoS attack. 
+Use a username and password for authentication instead of SSH keys to restrict access. 
+Lastly, open up the NSG to all traffic to allow for inbound and outbound traffic control.
+  
+![image](https://user-images.githubusercontent.com/112146207/231915269-71d8b02a-9a26-4606-80a6-15b9e2dbfb3e.png)
+![image](https://user-images.githubusercontent.com/112146207/231915347-62f9b7dc-8417-407e-8c89-868c9030add0.png)
+
+
+---
+ 
+To enhance the security of your Azure environment, there are three steps that we will take. 
+First, enable Microsoft Defender for Cloud for your Log Analytics Workspace. 
+ 
+![image](https://user-images.githubusercontent.com/112146207/231920040-942a930e-8b64-4e57-a570-1c061285996c.png)
+   
+![image](https://user-images.githubusercontent.com/112146207/231926363-08254f1f-16cb-4063-b121-98b233bd2e3c.png)
+ 
+Make sure everything is checked off and that you have your resource group, subscription, and your log analytics workspace info.
+![image](https://user-images.githubusercontent.com/112146207/231927395-28eb3a69-932b-4460-8cad-6641401e2528.png)
+
+---
+
+Second, enable Defender Plans for both VMs and SQL Instances on VMs to detect and respond to potential security threats. 
+
+  
+  
+  
+  Finally, enable data collection for all events to ensure that you're receiving comprehensive security alerts and logs. 
+These steps will help you stay proactive and better protect your Azure resources from potential cyber attacks.
+  
+ 
