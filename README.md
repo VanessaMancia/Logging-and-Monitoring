@@ -101,8 +101,8 @@ It should look something like this
 <details close>
 
 ---
+In this section we will create a Linux VM, and we're going to configure the Windows security event logs from our Windows machine, and the syslog logs from our Linux machine to send to our log analytics workspace. In additional to the VM, we will also configure logging for the NSG (AKA the mini firewalls) and we're going to send flow logs into the log analytics workspace. 
 
- We will enable MDC (Microsoft Defender for Cloud) and configure log collection for VMs
   
 To create another Virtual Machine in Azure, use the same Region, Resource Group, and VNet as the previous VM, and name it "linux-vm". 
 Avoid choosing B1s for the VM size as it may stop creating logs during a DDoS attack. 
