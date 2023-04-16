@@ -154,4 +154,5 @@ Now we will configure logging and log forwarding for our NSG (mini firewall)
 We will start by going to our Azure home page, click "windows VM", then go to networking,
 click on "windows-vm-nsg" 
   
- 
+![image](https://user-images.githubusercontent.com/112146207/232265995-760bf78d-f492-4d34-baaf-4651c0dc47c7.png)
+
