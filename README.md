@@ -156,3 +156,94 @@ click on "windows-vm-nsg"
   
 ![image](https://user-images.githubusercontent.com/112146207/232265995-760bf78d-f492-4d34-baaf-4651c0dc47c7.png)
 
+We will now create some NSG flow logs 
+  
+![image](https://user-images.githubusercontent.com/112146207/232343530-137bf329-4e04-4045-b763-f99d2fb0246a.png)
+
+We will do the same thing for our Linux VM 
+  
+![image](https://user-images.githubusercontent.com/112146207/232343651-7cad24f6-e116-4672-ae02-af80285dd4ec.png)
+
+---
+  
+In this section, we will enable diagnostic settings for both NSGs 
+  
+Search "VM", click "Windows-VM" and go to networking and click on your network security group 
+Click on "diagnostic settings" and "add diagnostic setting" 
+Put in your information and click "save" 
+
+![image](https://user-images.githubusercontent.com/112146207/232344379-94128f13-b60a-4ea2-9ddd-75138f189657.png)
+
+Do the same process for the Linux-VM
+---
+  
+We will now add data connectors to our VM's and create some data collection rules 
+  
+First go to Sentinel and click on "data connectors" and search "windows" 
+You should be able to see a "windows security events via AMA"
+Then click "open connector page" 
+
+![image](https://user-images.githubusercontent.com/112146207/232345194-b5cccdab-a8b2-482b-9f6b-ab2cfa2c7762.png)
+
+click "create data collection rule" 
+This allows events/logs to be brought into log analytics workspace from our VMs
+
+Fill in the information 
+
+![image](https://user-images.githubusercontent.com/112146207/232345533-3e5fe29a-37f0-42c9-ac76-0c3d84546730.png)
+
+Go to resources and click "add resources" 
+  
+![image](https://user-images.githubusercontent.com/112146207/232345592-00326467-8e19-4e76-a2ba-132f0819b762.png)
+
+And at the end it should look like this 
+
+![image](https://user-images.githubusercontent.com/112146207/232345624-34d89b98-2405-4606-ad08-50b6a0ff32d1.png)
+
+---
+
+We will now do this for our Linux VM
+  
+Search "log analytics workspace" and click on "agents" 
+Click on "linux servers" and click "Data collection rules" 
+  
+![image](https://user-images.githubusercontent.com/112146207/232345917-8ff52ffd-9f89-4769-8fcb-c25e2acb3b30.png)
+
+Click "create" 
+  
+![image](https://user-images.githubusercontent.com/112146207/232345993-dff68917-0376-4073-b1ef-eb6c80c3eac6.png)
+
+Now go to resources and click on the linux-VM
+
+![image](https://user-images.githubusercontent.com/112146207/232346046-56e725ef-55e0-45e5-8dc1-fb7ff2e326be.png)
+
+We will now add a data source for our Linux VM
+  
+The data source type is "linux Syslog" and leave LOG_AUTH set to LOG_DEBUG
+The rest of the logs should be "none"
+  
+![image](https://user-images.githubusercontent.com/112146207/232346488-8bd5f1a3-5b25-4bbd-b8cb-48dcc902debb.png)
+
+The final result should look something like this 
+  
+![image](https://user-images.githubusercontent.com/112146207/232348779-32801522-00c0-4f07-a9b8-1d50ea834278.png)
+ 
+We will go back to our log analytics workspace and create another windows to make sure it's collecting application logs 
+  
+![image](https://user-images.githubusercontent.com/112146207/232349001-7d3135e3-2d2d-42ed-a3b9-2c7cc9b65f60.png)
+
+The final result should look like this
+
+![image](https://user-images.githubusercontent.com/112146207/232349296-8e3bd95d-0dc4-4d8a-b597-3bb9363dc859.png)
+
+---
+  
+Finally we will keep checking/ refreshing the log analytics agents tab and ensure the VM's show up there 
+  
+Go to "log analytics workspace" and then "agents" and make sure that your windows and linux VM's are showing up 
+  
+![image](https://user-images.githubusercontent.com/112146207/232349589-a0925f87-7c29-4b37-aa07-d1289f503c3e.png)
+
+![image](https://user-images.githubusercontent.com/112146207/232349604-fbb882c4-332c-44d1-a4f2-ed38879289e5.png)
+
+
