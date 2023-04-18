@@ -246,5 +246,10 @@ Go to "log analytics workspace" and then "agents" and make sure that your window
 
 ![image](https://user-images.githubusercontent.com/112146207/232349604-fbb882c4-332c-44d1-a4f2-ed38879289e5.png)
 
+---
+ 
+ We will now fail login 3 times for our Linux machine and 1 successful login 
+
+![image](https://user-images.githubusercontent.com/112146207/232672245-53df1c87-5d0b-4a2c-9917-00bd40a845ee.png)
 
 
