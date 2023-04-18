@@ -334,7 +334,15 @@ We will configure which logs we want collected
 
 ---
   
-We will now create a dummy user
-Username "dummy_user" 
+In Azure AD look for "users" and create a new user 
+
+![image](https://user-images.githubusercontent.com/112146207/232917967-8c2786ca-1d8c-4afb-a201-a16d9cd01ad1.png)
+
+Next, we will assign our dummy_user the role of Global Administrator 
+  
+![image](https://user-images.githubusercontent.com/112146207/232919275-093723f3-579e-4587-a580-0954f07d08a2.png)
+
+
+
   
 
