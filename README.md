@@ -277,7 +277,8 @@ Now fail to login an RDP
 ![image](https://user-images.githubusercontent.com/112146207/232674353-95d1b883-5f04-42f4-a907-16f79cdbf617.png)
  
 ---
- We will now fail login 3 times for our Linux machine and 1 successful connection 
+ 
+  We will now fail login 3 times for our Linux machine and 1 successful connection 
 
 ![image](https://user-images.githubusercontent.com/112146207/232672245-53df1c87-5d0b-4a2c-9917-00bd40a845ee.png)
 
