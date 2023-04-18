@@ -319,6 +319,10 @@ Then click "add" and you should be able to see the free trial to Premium P2
   ----
 
 After that is all set and done 
-Search "Azure AD" go to "Security" then click "Identity Protection" 
+Search "Azure AD" go to "Security" then click "Identity Protection" and find "User Risk Policy"
+Make sure that you have enabled policy on 
+  
+![image](https://user-images.githubusercontent.com/112146207/232914636-98383955-f4f8-412b-a5e4-f6a941508934.png)
+
 
 
