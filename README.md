@@ -284,4 +284,20 @@ Now fail to login an RDP
 
 ---
   
+We can now go to "log Analytics" 
+The KQL query will look at the SSMS Authentication logs on the Windows computer
+We can see that the IP address is that of the attack VM
+  
+![image](https://user-images.githubusercontent.com/112146207/232676039-4441b94f-6f57-4e85-9d65-ae3c1c8bb345.png)
+
+
+---
+  
+We will check our Linux failed authentication attempts 
+  
+We can see the times I tried to login using an incorrect user and password 
+  
+![image](https://user-images.githubusercontent.com/112146207/232676715-cb74bdf0-52a7-46d6-af05-ed6267308bfd.png)
+
+![image](https://user-images.githubusercontent.com/112146207/232676902-4c080307-0cbf-49ee-b609-7bd7309dc3e1.png)
 
