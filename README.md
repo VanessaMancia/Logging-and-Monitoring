@@ -320,9 +320,21 @@ Then click "add" and you should be able to see the free trial to Premium P2
 
 After that is all set and done 
 Search "Azure AD" go to "Security" then click "Identity Protection" and find "User Risk Policy"
-Make sure that you have enabled policy on 
+Make sure that you have user risk policy on 
+Sign-in risk policy should also be on 
   
 ![image](https://user-images.githubusercontent.com/112146207/232914636-98383955-f4f8-412b-a5e4-f6a941508934.png)
 
+---
+  
+Go to Azure AD and search for "diagnostic settings"
+We will configure which logs we want collected 
+ 
+![image](https://user-images.githubusercontent.com/112146207/232916264-d04e3c5f-4979-4282-855a-31a275df883e.png)
 
+---
+  
+We will now create a dummy user
+Username "dummy_user" 
+  
 
