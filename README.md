@@ -254,6 +254,12 @@ Type in "syslog" and click "run" and you should be able to see your logs coming 
 
 ---
   
+ We are now exploring KQL which is very similar to SQL 
+ KQL helps us filter through logs to show us exactly what we want to find 
+  
+ 
+![image](https://user-images.githubusercontent.com/112146207/232673231-f23821d7-0627-43ed-80b9-5d0c7980ddc4.png)
+
 
  
   
