@@ -306,3 +306,11 @@ We can see the times I tried to login using an incorrect user and password
 We will now check the failed RDP failures 
   
 ![image](https://user-images.githubusercontent.com/112146207/232677531-d8b20f1d-f561-4105-9585-70e24baae515.png)
+
+
+<details close>
+
+In this section we will bring logs from Azure Active Directory 
+
+First search "Azure AD" go to "Security" then click "Identity Protection" 
+
