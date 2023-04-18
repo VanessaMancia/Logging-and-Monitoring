@@ -311,6 +311,14 @@ We will now check the failed RDP failures
 <details close>
 
 In this section we will bring logs from Azure Active Directory 
+ 
+The most important part of this lab is to get the "Azure Active Directory Premium P2"
+Go to Active Directory> Licenses > All products
+Then click "add" and you should be able to see the free trial to Premium P2
 
-First search "Azure AD" go to "Security" then click "Identity Protection" 
+  ----
+
+After that is all set and done 
+Search "Azure AD" go to "Security" then click "Identity Protection" 
+
 
