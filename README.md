@@ -260,9 +260,22 @@ Type in "syslog" and click "run" and you should be able to see your logs coming 
  
 ![image](https://user-images.githubusercontent.com/112146207/232673231-f23821d7-0627-43ed-80b9-5d0c7980ddc4.png)
 
+---
 
- 
+We will login into our attack VM and fail a couple of logins against the linux and windows computer and observe them in the log analytics 
   
+Get the public IP address of your windows VM
+Go to SSMS 
+Fail to login 3 times 
+
+![image](https://user-images.githubusercontent.com/112146207/232674032-a4f854b3-7946-4d24-9b34-e2b16b10a153.png)
+
+---
+  
+Now fail to login an RDP 
+  
+![image](https://user-images.githubusercontent.com/112146207/232674353-95d1b883-5f04-42f4-a907-16f79cdbf617.png)
+ 
 ---
  We will now fail login 3 times for our Linux machine and 1 successful login 
 
