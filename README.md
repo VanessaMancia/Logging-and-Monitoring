@@ -247,3 +247,4 @@ Go to "log analytics workspace" and then "agents" and make sure that your window
 ![image](https://user-images.githubusercontent.com/112146207/232349604-fbb882c4-332c-44d1-a4f2-ed38879289e5.png)
 
 
+
