@@ -342,6 +342,11 @@ Next, we will assign our dummy_user the role of Global Administrator
   
 ![image](https://user-images.githubusercontent.com/112146207/232919275-093723f3-579e-4587-a580-0954f07d08a2.png)
 
+---
+  
+Now we have to delete our dummy_user
+  
+![image](https://user-images.githubusercontent.com/112146207/232920249-a0fa6588-8650-48fd-b009-6a6f39b30a0f.png)
 
 
   
