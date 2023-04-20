@@ -175,6 +175,7 @@ Put in your information and click "save"
 ![image](https://user-images.githubusercontent.com/112146207/232344379-94128f13-b60a-4ea2-9ddd-75138f189657.png)
 
 Do the same process for the Linux-VM
+
 ---
   
 We will now add data connectors to our VM's and create some data collection rules 
@@ -348,6 +349,30 @@ Now we have to delete our dummy_user
   
 ![image](https://user-images.githubusercontent.com/112146207/232920249-a0fa6588-8650-48fd-b009-6a6f39b30a0f.png)
 
+---
+  
+We will now simuluate a brute force attack against AAD
+Then we will observe those logs in work analytics workspace 
+  
+  
+First get your vs code 
+  
+![image](https://user-images.githubusercontent.com/112146207/233215613-0b2e01f1-1f40-4a80-8aff-4a872309ae60.png)
+
+Run the "AAD-Brute-Force-Success-Simulator.ps1" from within your attack-VM
+  
+![image](https://user-images.githubusercontent.com/112146207/233221860-106b7e3f-b176-4f47-bf82-b2a0d54202df.png)
+
+ ---
+  
+ We now go back to our log analytics workspace 
+Click on "logs" 
+We are using KQL to query logs we want to see
+  
+![image](https://user-images.githubusercontent.com/112146207/233224548-ad887a59-bd80-48a3-b4a3-2f0196f4b52e.png)
+
+<details close>
 
   
+
 
