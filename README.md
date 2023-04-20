@@ -175,6 +175,7 @@ Put in your information and click "save"
 ![image](https://user-images.githubusercontent.com/112146207/232344379-94128f13-b60a-4ea2-9ddd-75138f189657.png)
 
 Do the same process for the Linux-VM
+
 ---
   
 We will now add data connectors to our VM's and create some data collection rules 
@@ -306,3 +307,133 @@ We can see the times I tried to login using an incorrect user and password
 We will now check the failed RDP failures 
   
 ![image](https://user-images.githubusercontent.com/112146207/232677531-d8b20f1d-f561-4105-9585-70e24baae515.png)
+
+
+<details close>
+
+In this section we will bring tenant level logs from Azure Active Directory 
+ 
+The most important part of this lab is to get the "Azure Active Directory Premium P2"
+Go to Active Directory> Licenses > All products
+Then click "add" and you should be able to see the free trial to Premium P2
+
+  ----
+
+After that is all set and done 
+Search "Azure AD" go to "Security" then click "Identity Protection" and find "User Risk Policy"
+Make sure that you have user risk policy on 
+Sign-in risk policy should also be on 
+  
+![image](https://user-images.githubusercontent.com/112146207/232914636-98383955-f4f8-412b-a5e4-f6a941508934.png)
+
+---
+  
+Go to Azure AD and search for "diagnostic settings"
+We will configure which logs we want collected 
+ 
+![image](https://user-images.githubusercontent.com/112146207/232916264-d04e3c5f-4979-4282-855a-31a275df883e.png)
+
+---
+  
+In Azure AD look for "users" and create a new user 
+
+![image](https://user-images.githubusercontent.com/112146207/232917967-8c2786ca-1d8c-4afb-a201-a16d9cd01ad1.png)
+
+Next, we will assign our dummy_user the role of Global Administrator 
+  
+![image](https://user-images.githubusercontent.com/112146207/232919275-093723f3-579e-4587-a580-0954f07d08a2.png)
+
+---
+  
+Now we have to delete our dummy_user
+  
+![image](https://user-images.githubusercontent.com/112146207/232920249-a0fa6588-8650-48fd-b009-6a6f39b30a0f.png)
+
+---
+  
+We will now simuluate a brute force attack against AAD
+Then we will observe those logs in work analytics workspace 
+  
+  
+First get your vs code 
+  
+![image](https://user-images.githubusercontent.com/112146207/233215613-0b2e01f1-1f40-4a80-8aff-4a872309ae60.png)
+
+Run the "AAD-Brute-Force-Success-Simulator.ps1" from within your attack-VM
+  
+![image](https://user-images.githubusercontent.com/112146207/233221860-106b7e3f-b176-4f47-bf82-b2a0d54202df.png)
+
+ ---
+  
+ We now go back to our log analytics workspace 
+Click on "logs" 
+We are using KQL to query logs we want to see
+  
+![image](https://user-images.githubusercontent.com/112146207/233224548-ad887a59-bd80-48a3-b4a3-2f0196f4b52e.png)
+
+<details close>
+
+In this lab we will bring in subscription level logging (activity log)
+  
+First we will export Azure Activity Logs to log analytics workspace 
+  
+Go to "azure monitor" click "activity log" and find "export activity logs" 
+From there click "add diagnostic setting" 
+  
+![image](https://user-images.githubusercontent.com/112146207/233226463-261d0029-d59e-4f6e-b392-3c1e63b47e68.png)
+
+We will now create a new resource group named "Scratch-Resource Group" and "critical infrastructure wastewater" 
+
+![image](https://user-images.githubusercontent.com/112146207/233227240-5c494dbb-0dec-4649-9aaf-d55845edeb6f.png)
+
+We will now delete the resource groups we just created 
+The reason for this is because we want to generate logs and observe them 
+  
+---
+  
+We will produce test lab queries 
+This is to better understand KQL and how to use it to filter through log activity
+  
+![image](https://user-images.githubusercontent.com/112146207/233230084-af667fea-5b7e-4fb4-81f2-a1d43227e4e4.png)
+  
+<details close>
+  
+In this lab we will collect logs for our blob storage and our key vault
+
+We will Configure logging for our storage account by enabling diagnostic settings for blob storage
+
+![image](https://user-images.githubusercontent.com/112146207/233239472-a29723af-0560-45ea-86f6-b604f8475c7a.png)
+
+---
+  
+Generate some Logs for Azure Storage (read some blobs/files)
+  
+![image](https://user-images.githubusercontent.com/112146207/233239985-f46c4019-6955-484d-81d3-109330c46641.png)
+
+---
+  
+We are going to create a diagnostic setting to enable logging of the key vault
+  
+![image](https://user-images.githubusercontent.com/112146207/233242773-15eb31ee-af85-465c-8829-396201ab2934.png)
+
+---
+
+We will now configure logging for our key vault 
+  
+First we will create a Key Vault Instance
+  
+![image](https://user-images.githubusercontent.com/112146207/233240688-6d9b72f0-2e52-47cd-8a62-022ed5cf76ae.png)
+
+Now we will add a secret to Key Vault called “Tenant-Global-Admin-Password” with a made up password
+  
+![image](https://user-images.githubusercontent.com/112146207/233241999-ced3fa1c-47a4-4f10-b861-b336ea2cd6c2.png)
+
+
+
+
+
+
+  
+
+
+
