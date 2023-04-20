@@ -311,7 +311,7 @@ We will now check the failed RDP failures
 
 <details close>
 
-In this section we will bring logs from Azure Active Directory 
+In this section we will bring tenant level logs from Azure Active Directory 
  
 The most important part of this lab is to get the "Azure Active Directory Premium P2"
 Go to Active Directory> Licenses > All products
@@ -373,6 +373,32 @@ We are using KQL to query logs we want to see
 
 <details close>
 
+In this lab we will bring in subscription level logging (activity log)
   
+First we will export Azure Activity Logs to log analytics workspace 
+  
+Go to "azure monitor" click "activity log" and find "export activity logs" 
+From there click "add diagnostic setting" 
+  
+![image](https://user-images.githubusercontent.com/112146207/233226463-261d0029-d59e-4f6e-b392-3c1e63b47e68.png)
+
+We will now create a new resource group named "Scratch-Resource Group" and "critical infrastructure wastewater" 
+
+![image](https://user-images.githubusercontent.com/112146207/233227240-5c494dbb-0dec-4649-9aaf-d55845edeb6f.png)
+
+We will now delete the resource groups we just created 
+The reason for this is because we want to generate logs and observe them 
+  
+---
+  
+We will produce test lab queries 
+This is to better understand KQL and how to use it to filter through log activity
+  
+![image](https://user-images.githubusercontent.com/112146207/233230084-af667fea-5b7e-4fb4-81f2-a1d43227e4e4.png)
+
+  
+
+  
+
 
 
