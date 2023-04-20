@@ -429,7 +429,7 @@ Now we will add a secret to Key Vault called “Tenant-Global-Admin-Password” 
 ![image](https://user-images.githubusercontent.com/112146207/233241999-ced3fa1c-47a4-4f10-b861-b336ea2cd6c2.png)
 
 
- 
+
 
 
 
