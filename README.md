@@ -395,8 +395,15 @@ We will produce test lab queries
 This is to better understand KQL and how to use it to filter through log activity
   
 ![image](https://user-images.githubusercontent.com/112146207/233230084-af667fea-5b7e-4fb4-81f2-a1d43227e4e4.png)
-
   
+<details close>
+  
+In this lab we will collect logs for our blob storage and our key vault
+
+We will Configure logging for our storage account by enabling diagnostic settings for blob storage
+
+
+
 
   
 
