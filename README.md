@@ -402,6 +402,34 @@ In this lab we will collect logs for our blob storage and our key vault
 
 We will Configure logging for our storage account by enabling diagnostic settings for blob storage
 
+![image](https://user-images.githubusercontent.com/112146207/233239472-a29723af-0560-45ea-86f6-b604f8475c7a.png)
+
+---
+  
+Generate some Logs for Azure Storage (read some blobs/files)
+  
+![image](https://user-images.githubusercontent.com/112146207/233239985-f46c4019-6955-484d-81d3-109330c46641.png)
+
+---
+  
+We are going to create a diagnostic setting to enable logging of the key vault
+  
+![image](https://user-images.githubusercontent.com/112146207/233242773-15eb31ee-af85-465c-8829-396201ab2934.png)
+
+---
+
+We will now configure logging for our key vault 
+  
+First we will create a Key Vault Instance
+  
+![image](https://user-images.githubusercontent.com/112146207/233240688-6d9b72f0-2e52-47cd-8a62-022ed5cf76ae.png)
+
+Now we will add a secret to Key Vault called “Tenant-Global-Admin-Password” with a made up password
+  
+![image](https://user-images.githubusercontent.com/112146207/233241999-ced3fa1c-47a4-4f10-b861-b336ea2cd6c2.png)
+
+
+ 
 
 
 
