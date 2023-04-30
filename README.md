@@ -16,7 +16,7 @@
 
 <details close>
 
-In this lab we will use 2 GeoIP files which will help us correlate IP addresses to figure out where the attacks originated from. 
+## In this lab we will use 2 GeoIP files which will help us correlate IP addresses to figure out where the attacks originated from. 
 This will be interesting because in Event Viewer we only see IP addresses, but we have no clue where the attacks came from. 
 
 
@@ -80,7 +80,7 @@ hit "create"
 
 ---
 
-We just created our work analytics workspace which will be injected with Geo data to let us correlate IP addresses and see people's origins. We will then create our SIEMs resource and connect it to the log analytics workspace. 
+## We just created our work analytics workspace which will be injected with Geo data to let us correlate IP addresses and see people's origins. We will then create our SIEMs resource and connect it to the log analytics workspace. 
 
 Go to the search bar and search "Microsoft Sentinel" and hit "create" 
 
@@ -89,7 +89,7 @@ Then click on your workspace and click "add"
 ![image](https://user-images.githubusercontent.com/112146207/231042846-4b76998a-cc03-4c4c-9568-174d36763b7b.png)
 
 ---
-We will now create 2 Watchlists within Azure Sentinel and ingest geo-data CSV Files from Azure Storage
+## We will now create 2 Watchlists within Azure Sentinel and ingest geo-data CSV Files from Azure Storage
 
 ![image](https://user-images.githubusercontent.com/112146207/231043926-67b9a1bc-b5cf-4b74-81bc-2370a8901560.png)
 
@@ -108,7 +108,7 @@ For the second watchlist I put this information in
 Now we have to allow these files to “upload”/load from our storage account into Sentinel/Log Analytics Workspace. The big one will likely take over 24 hours
 
 ---
-We will go to work analytics workspace and query the watchlists we created just to make sure we can see the records from both watchlists 
+## We will go to work analytics workspace and query the watchlists we created just to make sure we can see the records from both watchlists 
 
 It should look something like this
 
@@ -117,7 +117,7 @@ It should look something like this
 <details close>
 
 ---
-In this section we will create a Linux VM, and we're going to configure the Windows security event logs from our Windows machine, and the syslog logs from our Linux machine to send to our log analytics workspace. In additional to the VM, we will also configure logging for the NSG (AKA the mini firewalls) and we're going to send flow logs into the log analytics workspace. 
+## In this section we will create a Linux VM, and we're going to configure the Windows security event logs from our Windows machine, and the syslog logs from our Linux machine to send to our log analytics workspace. In additional to the VM, we will also configure logging for the NSG (AKA the mini firewalls) and we're going to send flow logs into the log analytics workspace. 
 
   
 To create another Virtual Machine in Azure, use the same Region, Resource Group, and VNet as the previous VM, and name it "linux-vm". 
@@ -295,7 +295,7 @@ Now fail to login an RDP
  
 ---
  
-  We will now fail login 3 times for our Linux machine and 1 successful connection 
+ We will now fail login 3 times for our Linux machine and 1 successful connection 
 
 ![image](https://user-images.githubusercontent.com/112146207/232672245-53df1c87-5d0b-4a2c-9917-00bd40a845ee.png)
 
@@ -327,7 +327,7 @@ We will now check the failed RDP failures
 
 <details close>
 
-In this section we will bring tenant level logs from Azure Active Directory 
+## In this section we will bring tenant level logs from Azure Active Directory 
  
 The most important part of this lab is to get the "Azure Active Directory Premium P2"
 Go to Active Directory> Licenses > All products
@@ -381,7 +381,7 @@ Run the "AAD-Brute-Force-Success-Simulator.ps1" from within your attack-VM
 
  ---
   
- We now go back to our log analytics workspace 
+We now go back to our log analytics workspace 
 Click on "logs" 
 We are using KQL to query logs we want to see
   
