@@ -1,5 +1,21 @@
 # Logging-and-Monitoring
 
+## Objectives for the next 7 labs that will create our logging and monitoring system.
+- Azure logging at different layers (Tenant, Activity, Resource)
+- Geo IP Data ingestion, log analytics, and Microsoft Sentinel Setup 
+- Enable MDC and configure log collection for VMs
+- KQL Deep Dive
+- Tenant level logging
+- Subscription level logging
+- Resource level logging
+
+## Environements and Technologies Used
+- Microsoft Azure
+- Microsoft Sentinel
+- Microsoft Cloud Defender
+
+<details close>
+
 In this lab we will use 2 GeoIP files which will help us correlate IP addresses to figure out where the attacks originated from. 
 This will be interesting because in Event Viewer we only see IP addresses, but we have no clue where the attacks came from. 
 
